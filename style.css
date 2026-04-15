@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+
+:root {
+    /*Cores*/
+    --cor-1: #ff090981;
+    --cor-2: #55555581;
+    --cor-3: #33333381;
+    --cor-4: #f4f4f481;
+    --cor-5: #020202be;
+    /*Fontes*/
+    --fonte-pricipal: Arial, sans-serif;
+    --fonte-secundária: Japan Rich, sans-serif;
+    --fonte-terciária: Momo Signature, sans-serif;
+}
+
+header {
+    margin-bottom: 0;
+    text-align: left;
+    padding: 20px;
+    background: url(imagens/head.png) no-repeat center center;
+    background-size: cover;
+    background-color: #ffffffd5;
+    border-radius: 5px;
+    border: 1px solid var(--cor-5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: var(--cor-4);
+    background: url(imagens/fuji3lagoyamanaka.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: var(--fonte-pricipal);
+    text-shadow: var(--cor-3) 0px 0px 10px;
+    color: var(--cor-1);
+}
+
+h2 {
+    font-family: var(--fonte-secundária);
+    color: var(--cor-5);
+}
+
+p {
+    color: var(--cor-5);
+}
+
+main {
+    background-color: #ffffffd5;
+    border: 1px solid var(--cor-5);
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-2);
+    margin-right: 15px;
+}
+
+nav a:hover {
+    background-color: var(--cor-1);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+strong {
+    color: var(--cor-5);
+    background-color: #0000003b;
+    padding: 2px 4px;
+    border-radius: 3px;
+
+}
+
+em {
+    font-style: italic;
+    font-family: var(--fonte-terciária);
+    color: var(--cor-5);
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--cor-5);
+    color: var(--cor-4);
+    margin: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: var(--cor-4);
+}
