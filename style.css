@@ -1,5 +1,51 @@
 @charset "UTF-8";
 
+@media (max-width: 1040px) {
+    body {
+        background: url(imagens/fuji3lagoyamanaka.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .imagem {
+        width: 250px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .lado {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .texto {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .lado {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .texto {
+        text-align: center;
+    }
+}
+
 
 :root {
     /*Cores*/
@@ -8,6 +54,7 @@
     --cor-3: #33333381;
     --cor-4: #f4f4f481;
     --cor-5: #020202be;
+    --cor-6: #f7c4ec6e;
     /*Fontes*/
     --fonte-pricipal: Arial, sans-serif;
     --fonte-secundária: Japan Rich, sans-serif;
@@ -15,7 +62,7 @@
 }
 
 header {
-    margin-bottom: 0;
+    margin: 20px;
     text-align: left;
     padding: 20px;
     background: url(imagens/head.png) no-repeat center center;
@@ -61,6 +108,10 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section {
+    margin-bottom: 20px;
+}
+
 nav {
     margin-bottom: 20px;
 }
@@ -72,7 +123,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: var(--cor-1);
+    background-color: var(--cor-6);
+    border: 1px solid var(--cor-3);
     color: #fff;
     padding: 5px 10px;
     border-radius: 3px;
@@ -94,6 +146,31 @@ em {
 
 h2 {
     margin-top: 30px;
+}
+
+.imagem {
+    width: 300px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--cor-5);
+
+}
+
+.lado {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.texto {
+    flex: 1;
+    border: 1px solid var(--cor-5);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--cor-6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
