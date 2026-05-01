@@ -10,40 +10,11 @@
         width: 95%;
         padding: 10px;
     }
-
-    .imagem {
-        width: 250px;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .lado {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .texto {
-        text-align: center;
-    }
 }
 
-@media (max-width: 600px) {
-
-    .lado {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .imagem {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .texto {
-        text-align: center;
-    }
+* {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -148,29 +119,38 @@ h2 {
     margin-top: 30px;
 }
 
-.imagem {
-    width: 300px;
-    flex-shrink: 0;
-    border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.texto1 {
     border: 1px solid var(--cor-5);
-
-}
-
-.lado {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.texto {
-    flex: 1;
-    border: 1px solid var(--cor-5);
-    padding: 15px;
+    padding: 15px 300px 15px 10px;
     border-radius: 5px;
-    background-color: var(--cor-6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(imagens/fuji2sakura.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.texto1 p {
+    color: var(--cor-6);
+    background-color: var(--cor-5);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.texto2 p {
+    color: var(--cor-6);
+    background-color: var(--cor-5);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.texto2 {
+    border: 1px solid var(--cor-5);
+    padding: 15px 300px 15px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(imagens/fuji5dia23fev.jpg);
+    background-position: center;
+    background-attachment: fixed;
 }
 
 footer {
