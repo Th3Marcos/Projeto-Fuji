@@ -1,90 +1,51 @@
 @charset "UTF-8";
 
-@media (max-width: 1040px) {
-    body {
-        background: url(imagens/fuji3lagoyamanaka.jpg) no-repeat center center fixed;
-        background-size: cover;
-    }
-
-    main {
-        width: 95%;
-        padding: 10px;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 :root {
     /*Cores*/
-    --cor-1: #ff090981;
+    --cor-1: #ff090946;
     --cor-2: #55555581;
     --cor-3: #33333381;
     --cor-4: #f4f4f481;
     --cor-5: #020202be;
-    --cor-6: #f7c4ec6e;
+    --cor-6: #e8cbe99f;
     /*Fontes*/
-    --fonte-pricipal: Arial, sans-serif;
+    --fonte-principal: Concert One, cursive;
     --fonte-secundária: Japan Rich, sans-serif;
     --fonte-terciária: Momo Signature, sans-serif;
 }
 
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-4);
+    color: var(--cor-5);
+}
+
 header {
-    margin: 20px;
-    text-align: left;
-    padding: 20px;
     background: url(imagens/head.png) no-repeat center center;
     background-size: cover;
-    background-color: #ffffffd5;
-    border-radius: 5px;
-    border: 1px solid var(--cor-5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    background-color: var(--cor-4);
-    background: url(imagens/fuji3lagoyamanaka.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-h1 {
-    font-family: var(--fonte-pricipal);
-    text-shadow: var(--cor-3) 0px 0px 10px;
-    color: var(--cor-1);
-}
-
-h2 {
-    font-family: var(--fonte-secundária);
+    background-size: auto;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.308);
     color: var(--cor-5);
-}
-
-p {
-    color: var(--cor-5);
-}
-
-main {
-    background-color: #ffffffd5;
-    border: 1px solid var(--cor-5);
+    text-align: center;
     padding: 20px;
-    width: 80%;
-    margin: 20px auto;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section {
-    margin-bottom: 20px;
+header h1 {
+    font-family: var(--fonte-terciária);
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 nav a {
@@ -94,75 +55,117 @@ nav a {
 }
 
 nav a:hover {
+    color: var(--cor-5);
+    text-decoration: wavy underline var(--cor-1);
+}
+
+main {
+    padding: 20px;
     background-color: var(--cor-6);
-    border: 1px solid var(--cor-3);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+    font-family: var(--fonte-secundária);
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-decoration: wavy underline var(--cor-1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 strong {
-    color: var(--cor-5);
-    background-color: #0000003b;
-    padding: 2px 4px;
-    border-radius: 3px;
-
-}
-
-em {
-    font-style: italic;
     font-family: var(--fonte-terciária);
     color: var(--cor-5);
+    text-decoration: wavy underline var(--cor-1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+
 }
 
-h2 {
-    margin-top: 30px;
+
+.strong1 {
+    color: white
 }
 
 .texto1 {
-    border: 1px solid var(--cor-5);
-    padding: 15px 300px 15px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: var(--fonte-principal);
     background-image: url(imagens/fuji2sakura.jpg);
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.308);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 2em;
+    position: relative;
+    color: white;
 }
 
-.texto1 p {
-    color: var(--cor-6);
-    background-color: var(--cor-5);
-    padding: 10px;
+.texto1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8));
     border-radius: 3px;
 }
 
-.texto2 p {
-    color: var(--cor-6);
-    background-color: var(--cor-5);
-    padding: 10px;
-    border-radius: 3px;
+.texto1 * {
+    position: relative;
+    z-index: 1;
 }
 
 .texto2 {
-    border: 1px solid var(--cor-5);
-    padding: 15px 300px 15px 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url(imagens/fuji5dia23fev.jpg);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-family: var(--fonte-principal);
+    background-image: url(imagens/fuji2sakura.jpg);
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.308);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 2em;
+    position: relative;
+    color: white;
+}
+
+.texto2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8));
+    border-radius: 3px;
+}
+
+.texto2 * {
+    position: relative;
+    z-index: 1;
 }
 
 footer {
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: var(--cor-5);
+    background-color: var(--cor-2);
     color: var(--cor-4);
-    margin: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 footer p {
     margin: 0;
-    color: var(--cor-4);
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
